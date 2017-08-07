@@ -1,12 +1,19 @@
-<div>
-  <p><%= @question %></p>
-  <p>- YOU</p>
+<div class="container">
+  <div class="row text-center">
+    <div class="display-answer">
+      <p><%= @question %></p>
+      <p>- YOU</p>
+    </div>
+
+    <div class="display-answer">
+      <p><%= @coach_answer %></p>
+      <p>- YOUR COACH</p>
+    </div>
+    <%= link_to "Ask a new question", ask_path %>
+  </div>
 </div>
 
-<div>
-  <p><%= @coach_answer %></p>
-  <p>- YOUR COACH</p>
-</div>
 
 
-<%= link_to "Ask a new question", ask_path %>
+
+
